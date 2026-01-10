@@ -57,3 +57,5 @@ for moeda in Moedas:
     qtd = resto // moeda
     resto = resto % moeda
     print(f"{qtd} moeda(s) de R$ {moeda/100:.2f}")
+
+#1035
