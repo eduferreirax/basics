@@ -28,12 +28,23 @@ print(f"TOTAL = R$ {total:.2f}")
 
 N1, N2, N3, N4 = map(float, input().split())
 
-Media = (N1 * 2) + (N2 * 3) + (N3 * 4) + (N4 * 1) / 4
+media = (N1*2 + N2*3 + N3*4 + N4*1) / 10
+print(f"Media: {media:.1f}")
 
-if Media >= 7.0:
+if media >= 7.0:
     print("Aluno aprovado.")
-if Media < 5.0:
+elif media < 5.0:
     print("Aluno reprovado.")
-if Media > 5.0 and < 6.9:
+else:
     print("Aluno em exame.")
-elif Media > 5.0 and < 6.9:
+    N5 = float(input())
+    print(f"Nota do exame: {N5:.1f}")
+
+    media_final = (media + N5) / 2
+
+    if media_final >= 5.0:
+        print("Aluno aprovado.")
+    else:
+        print("Aluno reprovado.")
+
+    print(f"Media final: {media_final:.1f}")
