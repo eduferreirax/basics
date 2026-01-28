@@ -17,3 +17,19 @@ elif x != 0 and y == 0:
 elif x == 0 and y != 0:
     print("Eixo Y")
     
+
+#1042 
+
+x, y , z = map(int, input().split())
+
+input_original = [x, y, z]
+
+input_ordenado = sorted(input_original)
+
+for v in input_ordenado:
+    print(v)
+
+print()
+
+for v in input_original:
+    print(v)
