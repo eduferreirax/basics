@@ -77,3 +77,5 @@ for moeda in Moedas:
     valor = valor % moeda
     print(f"{qtd} moeda(s) de R$ {moeda/100:.2f}")
 
+#1041
+
