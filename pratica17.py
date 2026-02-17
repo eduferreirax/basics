@@ -29,3 +29,21 @@ print(f"{even} valor(es) par(es)")
 print(f"{odd} valor(es) impar(es)")
 print(f"{pos} valor(es) positivo(s)")
 print(f"{neg} valor(es) negativo(s)")
+
+
+#1072
+
+n = int(input())
+
+in_count = 0
+out_count = 0
+
+for i in range(n):
+    x = int(input())
+    if 10 <= x <= 20:
+        in_count += 1
+    else:
+        out_count += 1
+
+print(f"{in_count} in")
+print(f"{out_count} out")
